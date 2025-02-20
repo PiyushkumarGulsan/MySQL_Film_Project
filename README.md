@@ -145,3 +145,31 @@ Order By
 ```
 ![image](https://github.com/user-attachments/assets/266c1049-0785-40e8-8ea9-a8f67870f2a8)
 
+
+**💡 Suggestions for Business Improvement**
+
+*✔️ Staff & Store Management*
+
+***If some stores have lower inventory levels, increase stock of popular films to maintain customer engagement.
+Conduct regular staff training to improve customer service.***
+
+*✔️ Film Inventory Optimization*
+
+****Analyze rental trends to stock more films from popular categories.
+Reduce inventory of less-rented films to optimize space.***
+
+*✔️ Customer Engagement & Marketing*
+
+***Reward top customers (high rental count) with discounts or loyalty programs.
+Identify inactive customers and send promotional emails to encourage rentals.***
+
+*✔️ Fraud & Payment Monitoring*
+
+***Implement alerts for unusually high payments to prevent fraud.
+Set a maximum transaction limit for online payments.***
+
+*✔️ Data Privacy & Security*
+
+***Encrypt customer emails in the database to prevent breaches.
+Conduct regular security audits on customer data.***
+
