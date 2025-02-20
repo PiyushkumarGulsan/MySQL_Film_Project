@@ -1,13 +1,13 @@
 # MySQL_Film_Project #
 
-"A MySQL project analyzing film inventory, replacement costs, customer rentals, and payment monitoring.  It includes queries for retrieving unique film titles, rental counts, replacement cost analysis, and fraud detection through payment tracking.  The project provides key business insights using structured SQL queries."
+*"A MySQL project analyzing film inventory, replacement costs, customer rentals, and payment monitoring.  It includes queries for retrieving unique film titles, rental counts, replacement cost analysis, and fraud detection through payment tracking.  The project provides key business insights using structured SQL queries."*
 
-Situation:   The company needs to renew its insurance policy, and underwriters require updated data from the Maven Movies database to proceed.
+**Situation:   The company needs to renew its insurance policy, and underwriters require updated data from the Maven Movies database to proceed.**
 
-Objective:   This MySQL project focuses on extracting and analyzing data from various tables to answer key business and insurance-related questions. 
-             It includes SQL queries for film inventory, rental patterns, replacement costs, and payment monitoring to provide insights required for policy renewal.
+**Objective:   This MySQL project focuses on extracting and analyzing data from various tables to answer key business and insurance-related questions. 
+             It includes SQL queries for film inventory, rental patterns, replacement costs, and payment monitoring to provide insights required for policy renewal.**
 
-Some Of the Question asked by Company :-
+**Some Of the Question asked by Company :-**
 
 Q 1. We will need a list of all staff members, including their first and last names, email addresses, and the store identification number where they work.
  
@@ -29,11 +29,13 @@ Q 7. We are interested in having you put payment monitoring systems and maximum 
 Q 8. We would like to better understand what our customer base looks like. Please provide a list of all customer identification values, with a count of rentals they have made all-time,
      with our highest volume customers at the top of the list.
 
-Answers:-
+
+**Answers:-**
 
  Use mavenmovies;
-/* Q1.  We will need a list of all staff members, including their first and last names, email addresses, 
-and the store identification number where they work. */
+ 
+** Q1.  We will need a list of all staff members, including their first and last names, email addresses, 
+and the store identification number where they work. **
 
 select 
      first_name,
@@ -45,7 +47,7 @@ FROM staff;
 ![image](https://github.com/user-attachments/assets/bcd648c7-3c9a-44c6-a12d-67e8bf8f71d2)
 
 
-/* Q2. We will need separate counts of inventory items held at each of our two stores. */
+** Q2. We will need separate counts of inventory items held at each of our two stores. **
 
 select
      store_id,
@@ -54,8 +56,8 @@ From inventory
 Group By 
 	 store_id;
      
-/* Q3. We will need a count of active customers for each of our stores. Separately.*/
-
+** Q3. We will need a count of active customers for each of our stores. Separately.**
+```
 Select 
      store_id,
      Count(customer_id) AS active_customer
@@ -63,4 +65,4 @@ From customer
 WHERE active = 1
 GROUP By 
     store_id;
- 
+ ```
