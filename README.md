@@ -88,3 +88,60 @@ From customer;
 
 **Q5.We are interested in how diverse our film offering is as a means of understanding how likely you are to keep customers engaged in the future. Please provide a count of unique film titles we have in inventory at each store and then provide a count of the unique categories of films we provide.**
 
+```
+select 
+      store_id,
+      Count(distinct film_id) AS unique_films
+ FROM inventory
+ GROUP BY 
+       store_id;
+```
+![image](https://github.com/user-attachments/assets/963f1192-26c1-4fa3-aac5-09568bc1c4de)
+
+
+```
+SELECT 
+      COUNT(Distinct name) AS Unique_categories
+From category;
+```
+![image](https://github.com/user-attachments/assets/d19febf7-63dc-436b-bf15-ea52914bbc68)
+
+
+**Q6. We would like to understand the replacement cost of our films. Please provide the replacement cost for the film that is least expensive to replace, the most expensive to replace, and   the average of all films we carry.**
+
+
+```
+SELECT 
+     MIN(replacement_cost) AS least_expensive,
+     MAX(replacement_cost) AS most_expencsive,
+     AVG(replacement_cost) AS average_replacement_cost
+From film;
+```
+
+![image](https://github.com/user-attachments/assets/77a56341-0f3e-43d8-aeeb-40967afd2bc1)
+
+**Q7. We are interested in having you put payment monitoring systems and maximum payment processing restrictions in place to minimize the future risk of fraud by our staff. Please provide the average payment we processed , as well as the maximum payment we have processed.**
+
+```
+SELECT
+     AVG(amount) AS average_payment,
+     MAX(amount) AS max_payment
+From payment;
+```
+![image](https://github.com/user-attachments/assets/4d65e765-9032-44f6-ba91-3eb64dee5088)
+
+**Q8. We would like to better understand what our customer base looks like. Please provide a list of all customer identification values, with a count of rentals they have made all-time, with our highest volume customers at the top of the list.**
+
+
+```
+SELECT
+     customer_id,
+     COUNT(rental_id) AS number_of_rentals
+From rental
+Group By 
+      customer_id
+Order By
+	Count(rental_id) DESC;
+```
+![image](https://github.com/user-attachments/assets/266c1049-0785-40e8-8ea9-a8f67870f2a8)
+
