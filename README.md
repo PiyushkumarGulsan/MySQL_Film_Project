@@ -48,7 +48,8 @@ select
 FROM staff;
 ```
 
-![image](https://github.com/user-attachments/assets/bcd648c7-3c9a-44c6-a12d-67e8bf8f71d2)
+![image](https://github.com/user-attachments/assets/21e14b7e-a796-4b89-9e2b-a2d7d496496a)
+
 
 
 **Q2. We will need separate counts of inventory items held at each of our two stores.**
