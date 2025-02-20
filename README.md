@@ -32,12 +32,14 @@ Q 8. We would like to better understand what our customer base looks like. Pleas
 
 **Answers:-**
 
- Use mavenmovies;
+
  
 **Q1.  We will need a list of all staff members, including their first and last names, email addresses, 
 and the store identification number where they work.**
 
 ```
+ Use mavenmovies;
+
 select 
      first_name,
      last_name,
